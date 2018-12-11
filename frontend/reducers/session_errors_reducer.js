@@ -1,6 +1,6 @@
 import { RECEIVE_SESSION_ERRORS, RECEIVE_CURRENT_USER } from '../actions/session_actions';
 
-const sessionReducer = (state = {}, action) {
+const sessionReducer = (state = {}, action) => {
   Object.freeze(state)
   const newState = Object.assign({}, state)
   switch (action.type) {
